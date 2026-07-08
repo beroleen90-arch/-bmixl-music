@@ -4,190 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>B Mix L | Official Music</title>
+<title>B Mix L | Official</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  font-family:Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #ffffff;
   background:
-    radial-gradient(circle at top, #102a78 0%, #050b24 38%, #02030a 100%);
-  color:white;
-  min-height:100vh;
+    radial-gradient(circle at 50% 0%, #123aa0 0%, #07194f 28%, #020817 62%, #01030a 100%);
 }
 
-.container{
-  width:92%;
-  max-width:900px;
-  margin:auto;
-  padding:45px 0 70px;
+.container {
+  width: 92%;
+  max-width: 760px;
+  margin: auto;
+  padding: 32px 0 60px;
 }
 
-.hero{
-  text-align:center;
-  padding:35px 20px;
+.hero {
+  text-align: center;
+  padding: 20px 10px 30px;
 }
 
-.logo{
-  width:170px;
-  height:170px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #d4af37;
+.logo {
+  width: 155px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d4af37;
   box-shadow:
-    0 0 20px rgba(212,175,55,.55),
-    0 0 45px rgba(20,70,255,.35);
+    0 0 18px rgba(212,175,55,.65),
+    0 0 45px rgba(25,80,255,.45);
 }
 
-h1{
-  margin-top:22px;
-  font-size:42px;
-  color:#e4bd45;
-  letter-spacing:2px;
+h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #e3bd4c;
 }
 
-.subtitle{
-  max-width:650px;
-  margin:15px auto;
-  line-height:1.9;
-  color:#e8e8e8;
-  font-size:17px;
+.gold-line {
+  width: 100px;
+  height: 2px;
+  margin: 15px auto;
+  background: linear-gradient(90deg, transparent, #e3bd4c, transparent);
 }
 
-.section-title{
-  text-align:center;
-  color:#e4bd45;
-  font-size:28px;
-  margin:40px 0 22px;
+.bio {
+  color: #e5e9f5;
+  line-height: 1.9;
+  font-size: 16px;
+  max-width: 600px;
+  margin: auto;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:16px;
+.section-title {
+  text-align: center;
+  color: #e3bd4c;
+  font-size: 25px;
+  margin: 32px 0 18px;
 }
 
-.card{
-  display:flex;
-  align-items:center;
-  gap:16px;
-  text-decoration:none;
-  color:white;
-  padding:20px;
-  border-radius:18px;
-  background:linear-gradient(145deg,#111a39,#080d20);
-  border:1px solid rgba(212,175,55,.45);
-  box-shadow:0 12px 30px rgba(0,0,0,.35);
-  transition:.25s;
+.links {
+  display: grid;
+  gap: 14px;
 }
 
-.card:hover{
-  transform:translateY(-4px);
-  border-color:#e4bd45;
-  box-shadow:0 15px 35px rgba(212,175,55,.18);
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  direction: ltr;
+  padding: 15px 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, rgba(15,28,72,.96), rgba(5,10,28,.98));
+  border: 1px solid rgba(212,175,55,.48);
+  box-shadow: 0 10px 25px rgba(0,0,0,.28);
+  transition: .25s;
 }
 
-.icon{
-  width:58px;
-  height:58px;
-  border-radius:15px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:30px;
-  background:#ffffff;
-  color:#071038;
-  font-weight:bold;
-  flex-shrink:0;
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #e3bd4c;
+  box-shadow: 0 12px 30px rgba(212,175,55,.16);
 }
 
-.card-text{
-  text-align:right;
+.icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  background: #ffffff;
 }
 
-.card-text strong{
-  display:block;
-  font-size:19px;
-  margin-bottom:5px;
+.spotify { color: #1DB954; }
+.apple { color: #111111; }
+.ytmusic { color: #FF0000; }
+.anghami { color: #7b2cff; }
+
+.card-text {
+  text-align: left;
 }
 
-.card-text span{
-  color:#aeb8d8;
-  font-size:13px;
+.card-text strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
 }
 
-.social{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
+.card-text span {
+  color: #aeb9dc;
+  font-size: 13px;
 }
 
-.social a{
-  text-decoration:none;
-  color:white;
-  text-align:center;
-  padding:18px 8px;
-  border-radius:16px;
-  background:rgba(255,255,255,.07);
-  border:1px solid rgba(255,255,255,.15);
-  transition:.25s;
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
 }
 
-.social a:hover{
-  border-color:#e4bd45;
-  transform:translateY(-3px);
+.social {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 17px 8px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.16);
+  transition: .25s;
 }
 
-.social-icon{
-  display:block;
-  font-size:28px;
-  margin-bottom:8px;
+.social:hover {
+  transform: translateY(-3px);
+  border-color: #e3bd4c;
 }
 
-.footer{
-  text-align:center;
-  margin-top:55px;
-  color:#8e98b8;
-  font-size:13px;
+.social strong {
+  display: block;
+  margin-top: 6px;
 }
 
-.gold-line{
-  width:90px;
-  height:2px;
-  background:linear-gradient(90deg,transparent,#e4bd45,transparent);
-  margin:18px auto;
+.social-symbol {
+  font-size: 28px;
 }
 
-@media(max-width:650px){
-  .container{
-    width:94%;
-    padding-top:25px;
+.footer {
+  text-align: center;
+  margin-top: 45px;
+  color: #8995b8;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 91%;
+    padding-top: 22px;
   }
 
-  .logo{
-    width:135px;
-    height:135px;
+  .logo {
+    width: 135px;
+    height: 135px;
   }
 
-  h1{
-    font-size:34px;
+  h1 {
+    font-size: 34px;
   }
 
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  .social{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .card{
-    padding:17px;
+  .bio {
+    font-size: 15px;
   }
 }
 </style>
@@ -201,7 +200,7 @@ h1{
 
     <img
       class="logo"
-      src="https://via.placeholder.com/300x300.png?text=B+MIX+L"
+      src="7D2C646B-49C1-4490-A08A-D0AE16C5CD29.png"
       alt="B Mix L Logo"
     >
 
@@ -209,8 +208,8 @@ h1{
 
     <div class="gold-line"></div>
 
-    <p class="subtitle">
-      مرحبًا بكم في العالم الرسمي لـ B Mix L.
+    <p class="bio">
+      مرحبًا بكم في الصفحة الرسمية لـ B Mix L.
       استمعوا إلى أحدث الأغاني والإصدارات الموسيقية،
       وتابعوا الحسابات الرسمية على جميع المنصات.
     </p>
@@ -218,36 +217,47 @@ h1{
   </section>
 
 
-  <h2 class="section-title">🎧 المنصات الموسيقية</h2>
+  <h2 class="section-title">🎧 استمع إلى B Mix L</h2>
 
-  <div class="grid">
+  <div class="links">
 
-    <a class="card" href="#" target="_blank">
-      <div class="icon">●</div>
+    <a class="card"
+       href="https://open.spotify.com/artist/0mpFczLfNzWtmbPBSyo8nV?si=C3xGQW5VQm-EvhVDfMzseg&utm_source=copy-link"
+       target="_blank">
+      <div class="icon spotify">●</div>
       <div class="card-text">
         <strong>Spotify</strong>
         <span>استمع على سبوتيفاي</span>
       </div>
     </a>
 
-    <a class="card" href="#" target="_blank">
-      <div class="icon">♫</div>
+
+    <a class="card"
+       href="https://music.apple.com/de/artist/b-mix-l/6777744134"
+       target="_blank">
+      <div class="icon apple">♪</div>
       <div class="card-text">
         <strong>Apple Music</strong>
         <span>استمع على أبل ميوزيك</span>
       </div>
     </a>
 
-    <a class="card" href="#" target="_blank">
-      <div class="icon">▶</div>
+
+    <a class="card"
+       href="https://music.youtube.com/@bmixl.music3?si=JE9JyM7Ui-HvqRMp"
+       target="_blank">
+      <div class="icon ytmusic">▶</div>
       <div class="card-text">
         <strong>YouTube Music</strong>
         <span>استمع على يوتيوب ميوزيك</span>
       </div>
     </a>
 
-    <a class="card" href="#" target="_blank">
-      <div class="icon">A</div>
+
+    <a class="card"
+       href="https://open.anghami.com/6IUXVADpC4b"
+       target="_blank">
+      <div class="icon anghami">A</div>
       <div class="card-text">
         <strong>Anghami</strong>
         <span>استمع على أنغامي</span>
@@ -259,26 +269,37 @@ h1{
 
   <h2 class="section-title">📱 الحسابات الرسمية</h2>
 
-  <div class="social">
+  <div class="social-grid">
 
-    <a href="https://www.tiktok.com/@b.mix.l" target="_blank">
-      <span class="social-icon">♪</span>
-      TikTok
+    <a class="social"
+       href="https://www.tiktok.com/@b.mix.l?_r=1&_t=ZG-97sG74FfZi5"
+       target="_blank">
+      <span class="social-symbol">♪</span>
+      <strong>TikTok</strong>
     </a>
 
-    <a href="https://www.instagram.com/bmixl777" target="_blank">
-      <span class="social-icon">◎</span>
-      Instagram
+
+    <a class="social"
+       href="https://www.instagram.com/bmixl777?igsh=MTJ2eDVvYnltcG10dg%3D%3D&utm_source=qr"
+       target="_blank">
+      <span class="social-symbol">◎</span>
+      <strong>Instagram</strong>
     </a>
 
-    <a href="https://www.youtube.com/@bmixl.music3" target="_blank">
-      <span class="social-icon">▶</span>
-      YouTube
+
+    <a class="social"
+       href="https://www.youtube.com/@bmixl.music3"
+       target="_blank">
+      <span class="social-symbol">▶</span>
+      <strong>YouTube</strong>
     </a>
 
-    <a href="#" target="_blank">
-      <span class="social-icon">f</span>
-      Facebook
+
+    <a class="social"
+       href="https://www.facebook.com/bmixl?"
+       target="_blank">
+      <span class="social-symbol">f</span>
+      <strong>Facebook</strong>
     </a>
 
   </div>
